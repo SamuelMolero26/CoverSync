@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CoverSyncServerSide.iml" filepath="$PROJECT_DIR$/.idea/CoverSyncServerSide.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Server/Main.iml" filepath="$PROJECT_DIR$/Server/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
     </modules>
   </component>
 </project>

@@ -11,7 +11,8 @@ public class DatabaseTest {
 
     @Test
     public void testCreateCustomer() {
-        // Create a new instance of the Database class
+
+        // Create a new instance of the Database class\
         Database db = new Database();
 
         // Create a new Customer
