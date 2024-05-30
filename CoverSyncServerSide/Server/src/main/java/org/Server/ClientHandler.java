@@ -1,4 +1,4 @@
-package example.server;
+package org.Server;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Observer;
 import java.util.Observable;
+import org.Server.Server;
 
 class ClientHandler implements Runnable, Observer {
 

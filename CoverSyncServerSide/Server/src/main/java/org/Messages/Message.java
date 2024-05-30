@@ -1,18 +1,18 @@
-package example.server;
+package org.Messages;
 
-class Message {
-  String type;
-  String input;
-  int number;
+public class Message {
+  public String type;
+  public String input;
+  public int number;
 
-  protected Message() {
+  public Message() {
     this.type = "";
     this.input = "";
     this.number = 0;
     System.out.println("server-side message created");
   }
 
-  protected Message(String type, String input, int number) {
+  public Message(String type, String input, int number) {
     this.type = type;
     this.input = input;
     this.number = number;
