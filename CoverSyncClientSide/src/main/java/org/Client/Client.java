@@ -1,4 +1,6 @@
-package example.client;
+package org.Client;
+import org.Messages.Message;
+
 
 import java.util.Scanner;
 import java.io.BufferedReader;
