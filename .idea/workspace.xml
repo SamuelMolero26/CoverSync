@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0ed5ec0-8720-4925-85f7-b8ad17959fc7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CoverSyncServerSide/Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/src/main/java/org/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoverSyncServerSide/Server/src/main/java/org/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/src/main/java/org/database/DatabaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/Server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/Server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/Server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/database/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverSyncServerSide/Server/target/classes/org/database/DatabaseTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2hAmWaITe9Xivjz4oiqkuyok6j1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/samuel/CoverSync",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0ed5ec0-8720-4925-85f7-b8ad17959fc7" name="Changes" comment="" />
+      <created>1717045288576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717045288576</updated>
+    </task>
+    <servers />
+  </component>
+</project>

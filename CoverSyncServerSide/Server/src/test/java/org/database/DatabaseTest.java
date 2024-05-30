@@ -5,14 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.database.Customer;
 import org.database.Database;
-import java.sql.SQLException; // Add import for SQLException
+import java.sql.SQLException;
 
 public class DatabaseTest {
 
     @Test
     public void testCreateCustomer() {
-
-        // Create a new instance of the Database class\
+        // Create a new instance of the Database class
         Database db = new Database();
 
         // Create a new Customer
@@ -29,6 +28,17 @@ public class DatabaseTest {
             // If an SQLException is thrown, fail the test
             fail("SQLException thrown: " + e.getMessage());
         }
-        // If no exception was thrown, the test passes
+
+        // Retrieve the customer from the database
+        Customer retrievedCustomer = null;
+        try {
+            retrievedCustomer = db.readCustomer(customer.getID());
+        } catch (SQLException e) {
+            // If an SQLException is thrown, fail the test
+            fail("SQLException thrown: " + e.getMessage());
+        }
+
+        // Assert that the retrieved customer is equal to the original customer
+        assertEquals(customer, retrievedCustomer);
     }
 }
