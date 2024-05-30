@@ -24,6 +24,13 @@
             <artifactId>gson</artifactId>
             <version>2.11.0</version>
         </dependency>
+        <!-- Add dependency for org.json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version> <!-- or the latest version -->
+        </dependency>
     </dependencies>
+
 
 </project>
