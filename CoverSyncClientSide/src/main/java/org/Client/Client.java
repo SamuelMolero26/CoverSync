@@ -10,22 +10,14 @@ import java.net.Socket;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-class Client {
+public class Client {
 
   private static String host = "127.0.0.1";
   private BufferedReader fromServer;
   private PrintWriter toServer;
   private Scanner consoleInput = new Scanner(System.in);
 
-  public static void main(String[] args) {
-    try {
-      new Client().setUpNetworking();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
-  private void setUpNetworking() throws Exception {
+  public void setUpNetworking() throws Exception {
     @SuppressWarnings("resource")
     Socket socket = new Socket(host, 4242);
     System.out.println("Connecting to... " + socket);
@@ -69,7 +61,7 @@ class Client {
     return;
   }
 
-  protected void sendToServer(String string) {
+  public void sendToServer(String string) {
     System.out.println("Sending to server: " + string);
     toServer.println(string);
     toServer.flush();
