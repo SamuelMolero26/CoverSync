@@ -8,7 +8,6 @@ public class Customer {
     private String SSN;
     private String number;
 
-    //for login
 
 
     //getters

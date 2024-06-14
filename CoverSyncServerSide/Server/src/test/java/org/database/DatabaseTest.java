@@ -1,5 +1,7 @@
 package org.database;
 
+
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,8 +12,10 @@ import java.sql.SQLException;
 public class DatabaseTest {
 
     @Test
+
     public void testCreateCustomer() {
         // Create a new instance of the Database class
+        System.out.println("hello");
         Database db = new Database();
 
         // Create a new Customer
