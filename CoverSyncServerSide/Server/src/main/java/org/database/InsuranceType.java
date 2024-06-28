@@ -1,3 +1,5 @@
+package org.database;
+
 public class InsuranceType {
 
     private int id;
