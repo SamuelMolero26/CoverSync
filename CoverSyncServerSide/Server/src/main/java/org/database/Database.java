@@ -52,17 +52,16 @@ public class Database {
                     insertStmt.setString(10, insurancetype.getType());
                     insertStmt.executeUpdate();
 
-                    insertStmt.executeUpdate();
 
-
-                    ResultSet rsInsert = insertStmt.getGeneratedKeys();
-                    if(rs.next()) {
-                        int customerId = rsInsert.getInt(1);//
-                        addCompanyTag(customerId, customer.getCompanyTag());
-                        addInsuranceType(customerId, customer.getInsuranceType());
-                        // Add customer to the cache
-                        customerCache.put(customerId, customer);
-                     }
+                    try( ResultSet rsInsert = insertStmt.getGeneratedKeys()) {
+                        if (rs.next()) {
+                            int customerId = rsInsert.getInt(1);//
+                            addCompanyTag(customerId, customer.getCompanyTag());
+                            addInsuranceType(customerId, customer.getInsuranceType());
+                            // Add customer to the cache
+                            customerCache.put(customerId, customer);
+                        }
+                    }
                  }
              }
          }
@@ -111,7 +110,6 @@ public class Database {
                 System.out.println("Execuing sql: " + stmt.toString());
                 int affectedRows = stmt.executeUpdate();
                 System.out.println("Inserted company tag: " + tag + " for customer ID: " + id + " - affected rows: " + affectedRows);
-                stmt.executeUpdate();
             }
         }
 
@@ -240,13 +238,15 @@ public class Database {
         List<Customer> customers = new ArrayList<>();
 
         String sql = "SELECT customers.* FROM customers JOIN insurances ON customers.id = insurances.id WHERE insurances.id = ?";
-        PreparedStatement stmt = conn.prepareStatement(sql);
-        stmt.setString(1, insuranceType);
-        ResultSet rs = stmt.executeQuery();
+        try(PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, insuranceType);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    Customer customer = createCustomerFromResultSet(rs);
+                    customers.add(customer);
+                }
 
-        while(rs.next()){
-            Customer customer = createCustomerFromResultSet(rs);
-            customers.add(customer);
+            }
         }
         return customers;
     }
@@ -293,7 +293,7 @@ public class Database {
                 stmt.executeUpdate();
                 customerCache.remove(id);
             }
-            deleteCustomerTags(id);
+            //deleteCustomerTags(id);
             deleteInsuranceType(id);
 
         }

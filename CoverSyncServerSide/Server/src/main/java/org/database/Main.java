@@ -12,10 +12,10 @@ public class Main {
 
             // Create sample data
             ArrayList<String> companyTags = new ArrayList<>(List.of("Tech", "Finance"));
-            ArrayList<String> insuranceTypes = new ArrayList<>(List.of("Health", "Auto"));
-            Customer customer1 = new Customer(69, "JoHn", "Doe", "123-45-6789", "555-1234", "john.doe@example.com", "123 Elm Street", "1980-01-01", insuranceTypes, companyTags);
+            ArrayList<String> insuranceTypes = new ArrayList<>(List.of("life", "Auto"));
+            Customer customer1 = new Customer(999, "Jay", "Doe", "123-45-6789", "555-1234", "john.doe@example.com", "143 Elm Street", "1980-01-01", insuranceTypes, companyTags);
             Company company = new Company(1, "Tech", "Technology");
-            InsuranceType insuranceType = new InsuranceType(1, "Health");
+            InsuranceType insuranceType = new InsuranceType(5, "Life");
 
             // Add the customer
             db.addCustomer(customer1, company, insuranceType);
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Customer updated successfully.");
 
             // Retrieve customer by ID
-            Customer retrievedCustomer = db.getCustomerById(1);
+            Customer retrievedCustomer = db.getCustomerById(69);
             System.out.println("Retrieved Customer by ID: " + retrievedCustomer.getfirstName() + " " + retrievedCustomer.getlastName());
 
             // Retrieve customers by company tag
