@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 import './App.css';
 
-import 
 
 function LoginPage() {
 
@@ -29,10 +28,10 @@ function LoginPage() {
         <div className = 'login-page'>
             <form onSubmit = {handleSubmit} className = "login-form">
                 <div>
-                    <label>Username: </label>
+                    <label className= "username">Username: </label>
                     <input type="text" value={username} onChange={handleUsernameChange} />  </div>
                 <div>
-                    <label>Password</label>
+                    <label className= "password">Password</label>
                     <input type = "password" value={password} onChange ={handlePasswordChange} />
                 </div>
                 <button type ="submit"> login</button>
