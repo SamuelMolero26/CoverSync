@@ -9,8 +9,7 @@
 }
 
 .header-content {
+  flex: 1; /* This makes the header content take up the remaining space */
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  align-items: center;
 }
-
