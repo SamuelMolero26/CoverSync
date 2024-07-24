@@ -1,14 +1,14 @@
 
 import React from 'react';
 
-import LoginPage from './LoginPage'; 
+import PersonalPage from './components/PersonalPage'; 
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <PersonalPage />
     </div>
   );
 }
