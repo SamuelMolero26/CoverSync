@@ -27,14 +27,14 @@ function LoginPage() {
     return (
         <div className = 'login-page'>
             <form onSubmit = {handleSubmit} className = "login-form">
-                <div>
-                    <label className= "username">Username: </label>
+                <div className="username-section">
+                    <label className= "login-username">Username: </label>
                     <input type="text" value={username} onChange={handleUsernameChange} />  </div>
-                <div>
-                    <label className= "password">Password</label>
+                <div className="password-section">
+                    <label className= "login-password">Password: </label>
                     <input type = "password" value={password} onChange ={handlePasswordChange} />
-                </div>
-                <button type ="submit"> login</button>
+                </div >
+                 <button className ="button" type ="submit"> login</button>
             </form>
         </div>
     )

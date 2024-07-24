@@ -28,6 +28,37 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-username, .login-password {
+
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.username-section {
+  margin-bottom: 30px;
+}
+
+.username-section {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(to right, #6375e9, #1c80eb);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
 }
 
+button:hover {
+  background: linear-gradient(to right,  #6375e9, #1c80eb  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0 , 0.2);
+}
