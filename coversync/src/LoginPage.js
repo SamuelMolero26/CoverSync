@@ -10,7 +10,7 @@ function LoginPage() {
     const [password, setPassword] = useState('');
 
     const handleUsernameChange = (event) => {
-        setUsername(event.taget.value);
+        setUsername(event.target.value);
     };
 
 
@@ -25,19 +25,22 @@ function LoginPage() {
     };
 
     return (
-        <div className = 'login-page'>
+        
+        <div className = "login-page">
             <form onSubmit = {handleSubmit} className = "login-form">
+                <div ><h2 className="loginTitle">Welcome</h2></div>
                 <div className="username-section">
                     <label className= "login-username">Username: </label>
-                    <input type="text" value={username} onChange={handleUsernameChange} />  </div>
+                    <input className= "username-input" id ="username"  value={username} onChange={handleUsernameChange} />  
+                </div>
                 <div className="password-section">
                     <label className= "login-password">Password: </label>
-                    <input type = "password" value={password} onChange ={handlePasswordChange} />
+                    <input className= "password-input" type= "password" value={password} onChange ={handlePasswordChange} />
                 </div >
-                 <button className ="button" type ="submit"> login</button>
+                 <button className ="button" type ="submit"> Login</button>
             </form>
         </div>
-    )
+    );
 
 }
 export default LoginPage;
